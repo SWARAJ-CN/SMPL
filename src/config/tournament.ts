@@ -1,3 +1,6 @@
+// src/config/tournament.ts
+
+// src/config/tournament.ts
 export const tournamentConfig = {
   title: "Sajeev Memorial Public Library 5s Football Tournament",
   shortName: "SMPL 5s",
@@ -7,12 +10,11 @@ export const tournamentConfig = {
   prizeMoney: "To be announced",
   contactNumbers: [] as string[],
   upiId: "",
-  // Supply a real payment address and event details before accepting live registrations.
   paymentRequirement: "either" as "either" | "proof" | "transaction" | "both",
   registrationPrefix: "SMPL5S",
   maxProofSize: 1024 * 1024,
+  maxPlayerProofSize: 500 * 1024,
 }
-
 export const feeLabel =
   tournamentConfig.registrationFee === null
     ? "To be announced"
